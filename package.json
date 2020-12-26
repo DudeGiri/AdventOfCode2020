@@ -1,0 +1,26 @@
+{
+  "name": "adventofcode2020",
+  "version": "1.0.0",
+  "description": "Advent of Code puzzles",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DudeGiri/AdventOfCode2020.git"
+  },
+  "author": "Karthik Sridhar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DudeGiri/AdventOfCode2020/issues"
+  },
+  "homepage": "https://github.com/DudeGiri/AdventOfCode2020#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
