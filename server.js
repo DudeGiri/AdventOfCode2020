@@ -6,8 +6,8 @@ var express = require('express'),
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var day01Router = require('./api/routes/day01routes');
-app.use(day01Router);
+app.use('/day01', require('./api/routes/day01routes'));
+app.use('/day02', require('./api/routes/day02routes'));
 
 app.use(function(req, res) {
   res.status(404).send({url: req.originalUrl + ' not found'})
