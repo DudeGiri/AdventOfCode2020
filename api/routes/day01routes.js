@@ -4,9 +4,9 @@ var router = express.Router();
 var day01 = require('../controllers/day01Controller');
 
 // GET for two numbers adding to 2020.
-router.get('/day01/findtwo', day01.report_repair_two);
+router.get('/partone', day01.report_repair_part_one);
 
 // GET for three numbers adding to 2020.
-router.get('/day01/findthree', day01.report_repair_three);
+router.get('/parttwo', day01.report_repair_part_two);
 
 module.exports = router;

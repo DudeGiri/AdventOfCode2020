@@ -1,7 +1,7 @@
 'use strict';
 var fs = require('fs');
 
-exports.report_repair_two = function(req, res) {
+exports.report_repair_part_one = function(req, res) {
   var input = fs.readFileSync('./input/day01.txt', 'utf8').split('\r\n').map(Number);
   input.sort(function(a, b){return a-b});
   var left = 0;
@@ -29,7 +29,7 @@ exports.report_repair_two = function(req, res) {
   res.status(400).send('Unable to find a match');
 };
 
-exports.report_repair_three = function(req, res) {
+exports.report_repair_part_two = function(req, res) {
   var input = fs.readFileSync('./input/day01.txt', 'utf8').split('\r\n').map(Number);
   input.sort(function(a, b){return a-b});
   const expectedSum = 2020;
